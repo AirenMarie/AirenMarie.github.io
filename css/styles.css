@@ -1,0 +1,73 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #090223;
+  background-color: #1c0669;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #b09df6;
+  border-radius: 8px;
+}
+h1,
+h2 {
+  color: #1c0669;
+}
+.header {
+  text-align: center;
+}
+.header h1 {
+  margin: 10px 0;
+}
+.contact {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.contact a {
+  color: #2b186f;
+  text-decoration: none;
+}
+.project-link {
+  color: #2b186f;
+}
+.section {
+  margin: 20px 0;
+}
+.section h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #090223;
+  padding-bottom: 5px;
+}
+.item {
+  margin-bottom: 15px;
+}
+.item h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #090223;
+}
+.item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #090223;
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+.skills ul li {
+  display: inline-block;
+  background: #090223;
+  color: #d8cdff;
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0;
+  border-radius: 4px;
+}
+
+#project-header {
+  text-align: center;
+}
