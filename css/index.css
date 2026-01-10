@@ -1,0 +1,116 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #090223;
+  background-color: #1c0669;
+}
+.container {
+  max-width: 60vw;
+  margin: 20px auto;
+  padding: 20px;
+  background: #b09df6;
+  border-radius: 8px;
+}
+h1,
+h2 {
+  color: #1c0669;
+}
+.header {
+  text-align: center;
+}
+.header h1 {
+  margin: 10px 0;
+}
+.contact {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.contact a {
+  color: #2b186f;
+  text-decoration: none;
+}
+.project-link {
+  color: #2b186f;
+}
+.section {
+  margin: 20px 0;
+}
+.section h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #090223;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.item {
+  margin-bottom: 15px;
+}
+.item h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #090223;
+  text-align: center;
+}
+
+p:last-of-type {
+  text-align: center;
+}
+
+.item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #090223;
+}
+
+.date {
+  text-align: center;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills ul li {
+  display: inline-block;
+  background: #090223;
+  color: #d8cdff;
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0;
+  border-radius: 4px;
+}
+
+#project-header {
+  text-align: center;
+  border-bottom: 3px solid #090223;
+}
+
+.project {
+  text-align: center;
+  border-bottom: 2px solid #090223;
+  padding-bottom: 20px;
+}
+
+.project-page-link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .section h2,
+  .item h3,
+  p:last-of-type,
+  .project {
+    text-align: left;
+  }
+
+  .skills ul {
+    justify-content: flex-start;
+  }
+}
