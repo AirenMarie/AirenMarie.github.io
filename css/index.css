@@ -23,6 +23,7 @@ h2 {
 .header h1 {
   margin: 10px 0;
 }
+
 .contact {
   margin: 10px 0;
   font-size: 14px;
@@ -89,9 +90,12 @@ p:last-of-type {
 }
 
 .project {
-  text-align: center;
   border-bottom: 2px solid #090223;
   padding-bottom: 20px;
+}
+
+.project p {
+  text-align: center;
 }
 
 .project-page-link {
