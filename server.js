@@ -23,8 +23,7 @@ async function getRepos() {
   try {
     const response = await fetch(endpoint);
     const data = await response.json();
-    const repoURL = data.html_url;
-
+    const repoURL = data;
     return repoURL;
   } catch (error) {
     console.error(error);
