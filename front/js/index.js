@@ -1,8 +1,3 @@
-"use strict";
-
-//const username = "AirenMarie";
-
-const viewProjectsBtn = document.getElementById("view-projects");
 async function getRepos() {
   try {
     const endpoint = "http://localhost:8080/api/v1/getRepos";
@@ -11,19 +6,14 @@ async function getRepos() {
     const result = await response.json();
     console.log("The server sent back:", result);
 
+    const projectSection = document.getElementById("card-container");
+
     result.data.forEach((repo) => {
-      const projectSection = document.getElementById("project-section");
-      const projectDesc = document.querySelector("project-desc");
-
-      projectSection.innerHTML += `<div class="project"><h3 class="project-name">${repo.name}</h3><p class="project-desc">${repo.description}</p><a href="${repo.html_url}">View Project</a></div>`;
-
-      if (repo.description === null) {
-        projectDesc.textContent = "No description available.";
-      }
+      projectSection.innerHTML += `<article class="project"><h3 class="project-name">${repo.name}</h3><p class="project-desc">${repo.description ?? "No description available."}</p><a class="project-page-link" href="${repo.html_url}" target="_blank">View Project</a></article>`;
     });
   } catch (error) {
     console.error(error);
   }
 }
 
-viewProjectsBtn.addEventListener("click", getRepos);
+getRepos();
